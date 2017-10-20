@@ -4,3 +4,5 @@ buildNumber.properties
 .classpath
 target/
 MdlViewer.log*
+.idea/
+*.iml

@@ -12,14 +12,14 @@
 
 	<modules>
 		<module>HoTT-Model</module>
-		<module>Hott-Decoder/HoTT-Decoder</module>
+		<!-- <module>Hott-Decoder/HoTT-Decoder</module> -->
 		<module>HoTT-Report-HTML</module>
 		<module>HoTT-Report-PDF</module>
 		<module>HoTT-Report-XML</module>
 		<module>HoTT-MdlViewer-Swing</module>
 		<module>HoTT-MdlViewer-SWT</module>
 		<!-- module>HoTT-MdlViewer-Android</module -->
-		<module>MemoryDump</module>
+		<!-- <module>MemoryDump</module> -->
 		<module>HoTT-MdlViewer-JavaFX</module>
 		<module>VDFEditor</module>
 	</modules>

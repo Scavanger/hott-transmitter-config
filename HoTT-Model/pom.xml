@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>de.treichels.hott</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.0.0</version>
+		<version>0.9.1</version>
 	</parent>
 
 	<scm>
@@ -36,11 +36,6 @@
 		<dependency>
 			<groupId>org.scream3r</groupId>
 			<artifactId>jssc</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.tts</groupId>
-			<artifactId>voicerss</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 </project>

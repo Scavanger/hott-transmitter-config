@@ -3,31 +3,30 @@ package de.treichels.hott.vdfeditor.ui;
 import java.io.File;
 
 import gde.model.voice.VoiceRSS;
+import gde.model.voice.VoiceRssLanguage;
 import javafx.concurrent.Task;
 
 final class Text2SpeechTask extends Task<File> {
-
-    private String text;
-    private String language;
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getText() {
-        return this.text;
-    }
-
-    public void setLanguage(String language) {
-        this.language = language;
-    }
-
-    public String getLanguage() {
-        return this.language;
-    }
+    private final VoiceRSS voiceRSS = new VoiceRSS();
 
     @Override
     protected File call() throws Exception {
-        return new VoiceRSS().convert(text, language);
+        return voiceRSS.getFile();
+    }
+
+    public VoiceRssLanguage getLanguage() {
+        return voiceRSS.getLanguage();
+    }
+
+    public String getText() {
+        return voiceRSS.getText();
+    }
+
+    public void setLanguage(final VoiceRssLanguage language) {
+        voiceRSS.setLanguage(language);
+    }
+
+    public void setText(final String text) {
+        voiceRSS.setText(text);
     }
 }

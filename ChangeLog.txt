@@ -1,5 +1,8 @@
 2017-10-09
 ==========
+	VDFEditor-0.9.0.112
+	- updated user manuals
+	
 	VDFEditor-0.9.0.111
 	- new voice files for microcopter
 	

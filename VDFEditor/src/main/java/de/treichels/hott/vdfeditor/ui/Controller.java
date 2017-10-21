@@ -194,7 +194,7 @@ public class Controller {
     final UndoBuffer<VoiceData> undoBuffer = new UndoBuffer<>();
     private final ObjectProperty<HoTTSerialPort> serialPortProperty = new SimpleObjectProperty<>();
     private final DialogController dialogController = new DialogController(serialPortProperty);
-    private final SpeechDialogController<File> s2tController = new SpeechDialogController<>();
+    private final SpeechDialogController s2tController = new SpeechDialogController();
 
     private boolean mute = false;
 
